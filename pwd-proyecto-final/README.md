@@ -1,9 +1,5 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-
 <br />
 <div align="center">
     <img src="./Vista/img/logo.png" alt="Logo" width="80" height="80">
@@ -16,80 +12,50 @@
   </p>
 </div>
 
-# Participantes
+Participantes
+Jerónimo Agustín Rojo
+Correo electrónico: jeronimo.rojo.99@gmail.com
+Objetivos
+El objetivo de este trabajo es aplicar los conceptos aprendidos en la materia. Se busca desarrollar una tienda en línea con dos vistas: pública y privada.
 
-Laureano Luna - lunalaureanoluna@gmail.com
+Vista Pública:
+En esta vista, los usuarios pueden acceder a información sobre la tienda, como dirección, medios de contacto, descripción y otros detalles relevantes. También es posible acceder a la vista privada mediante autenticación con credenciales válidas.
 
-Braian Centurión - braiankrayan@hotmail.com
+Vista Privada:
+Una vez autenticados, los usuarios pueden acceder a diferentes operaciones según su rol. Los roles iniciales son cliente, depósito y administrador.
 
-Jeremías Sappia - jeremiassappia@gmail.com
+Herramientas Utilizadas
+Bootstrap
+JQuery
+Pautas Básicas
+La aplicación se desarrollará siguiendo la arquitectura MVC (Modelo-Vista-Controlador) utilizando PHP como lenguaje de programación. Se sugiere utilizar una estructura de directorio similar a la ilustrada en la Figura 2.
 
-Roni Broilo - ronniebroilo@gmail.com
+Se utilizará la base de datos "bdcarritocompras" proporcionada por la cátedra. Se aplicará el Mapeo Objeto-Relacional (MOR) a las tablas del modelo de base de datos de la Figura 1. Se verificará la estructura de las tablas y se realizarán modificaciones según sea necesario.
 
-## Objetivos:
-El objetivo del trabajo es integrar los conceptos vistos en la materia. Se espera que el alumno implemente una tienda On-Line que tendrá 2 vistas: una vista “pública” y otra “privada”.
+La aplicación tendrá páginas públicas y restringidas, accesibles solo mediante autenticación. Se utilizará el módulo de autenticación implementado en el Trabajo Práctico 5. Se definirán al menos tres roles: cliente, depósito y administrador.
 
-* Desde la vista pública se tiene acceso a la información de la tienda: dirección, medios de contacto, descripción y toda aquella información que crea importante desplegar. Además se podrá acceder a la vista privada de la aplicación, a partir del ingreso de un usuario y contraseña válida.
-* Desde la vista privada, luego de concretar el proceso de autenticación y dependiendo los roles con el que cuenta el usuario que ingresa al sistema, se van a poder realizar diferentes operaciones. Los roles iniciales son: cliente, depósito y administrador.
-### Hecho Con
+El menú de la aplicación será dinámico y administrado por el administrador. Las tablas "menu" y "menurol" en la base de datos contendrán esta información.
 
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+Los usuarios con múltiples roles podrán cambiar de rol según su preferencia.
 
-### Pautas Básicas:
+Funcionalidades del usuario con rol Cliente:
 
-<br><br>
-1. La aplicación debe ser desarrollada sobre una arquitectura MVC (Modelo-VistaControl) utilizando PHP como lenguaje de programación. Se propone una estructura de directorio inicial como la que se visualiza en la Ilustración 2.
-<br><br>
-2. Se debe utilizar la Base de Datos bdcarritocompras otorgada por la cátedra. Realizar el MOR de las tablas del modelo de base de datos de la Ilustración 1. Verificar la estructura de las tablas y realizar las modificaciones que crea
-necesarias.
-<br><br>
-3. La aplicación tendrá páginas públicas y otras restringidas, que sólo podrán ser accedidas a partir de un usuario y contraseña. Utilizar el módulo de autenticación implementado en TP5. La aplicación debe tener como mínimo los siguientes
-roles: cliente, depósito y administrador.
-<br><br>
-4. El menú de la aplicación debe ser un menú dinámico que pueda ser gestionado por el administrador de la aplicación. Las tablas de la base de datos vinculadas a esta información son: menu y menurol.
-<br><br>
-5. Cualquier usuario que tenga más de un rol asignado, puede cambiar de rol según lo desee.
-<br><br>
-6. Desde la aplicación un usuario con rol Cliente podrá:
-    * Gestionar los datos de su cuenta, como cambiar su e-mail y contraseña.
-    * Realizar la compra de uno o más productos con stock suficiente.
-<br><br>
-7. Desde la aplicación un usuario con rol Deposito podrá:
-    * Crear nuevos productos y administrar los existentes.
-    * Acceder a los procedimientos que permite el cambio de estado de los productos.
-    * Modificar el stock de los productos.
-<br><br>
-8. Desde la aplicación un usuario con rol Administrador podrá:
-    * Crear nuevos usuarios al sistema, asignar los roles correspondientes y actualizar la información que se requiera.
-    * Gestionar y administrar nuevos roles e ítem del menú. Vinculando item del menú al rol según corresponda.
+Modificar los datos de su cuenta, como correo y contraseña.
+Realizar compras de productos con stock suficiente.
+Funcionalidades del usuario con rol Depósito:
 
-### Lista Usuarios:
+Crear y gestionar productos.
+Cambiar el estado de los productos mediante procedimientos.
+Modificar el stock de productos.
+Funcionalidades del usuario con rol Administrador:
 
-1. Nombre de Usuario: mondongo
-  * Contraseña: mondongo
-  * Roles: Admin - Depósito - Cliente
-2. Nombre de Usuario: admin
-  * Contraseña: admin123
-  * Roles: Admin
-3. Nombre de Usuario: deposito
-  * Contraseña: deposito
-  * Roles: Depósito
-4. Nombre de Usuario: cliente
-  * Contraseña: cliente123
-  * Roles: Cliente
+Crear nuevos usuarios y asignar roles.
+Gestionar roles y elementos del menú.
+Lista de Usuarios
+
+Usuario: admin
+Contraseña: admin
+Roles: Administrador, Depósito, Cliente
 
 <p align="right">(<a href="#readme-top">ir al inicio</a>)</p>
 
-
-
-[contributors-shield]: https://img.shields.io/github/contributors/sappiajeremias/TP-Final-PWD.svg?style=for-the-badge
-[contributors-url]: https://github.com/sappiajeremias/TP-Final-PWD/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sappiajeremias/TP-Final-PWD.svg?style=for-the-badge
-[forks-url]: https://github.com/sappiajeremias/TP-Final-PWD/network/members
-[stars-shield]: https://img.shields.io/github/stars/sappiajeremias/TP-Final-PWD.svg?style=for-the-badge
-[stars-url]: https://github.com/sappiajeremias/TP-Final-PWD/stargazers
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
